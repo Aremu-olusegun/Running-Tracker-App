@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running tracker app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+
+    </div>
+    <form action="">
+        <label for="entry">Number of miles today</label>
+        <br>
+        <input type="number" id="entry" step="0.1">
+        <button type="submit">Add</button>
+    </form>
+
+    <hr>
+    <section class="entriesWrapper">
+        <h3>Last 7 days</h3>
+        <ul id="entries">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section class="data">
+            <div>
+                <p>Total:</p>
+                <span id="total">0</span>
+            </div>
+            <div>
+                <p>Average distance:</p>
+                <span id="average">0</span>
+            </div>
+            <div>
+                <p>This weeks high:</p>
+                <span id="high">0</span>
+            </div>
+    </section>
+
+    <section class="progress">
+        <h3>Weekly target: 
+            <span id="progressTotal"></span> / 
+            <span id="target"></span>
+        </h3>
+        <div class="progressCircleWrapper">
+            <div id="progressCircle">
+                <div id="progressCenter">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
